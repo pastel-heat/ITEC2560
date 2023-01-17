@@ -1,19 +1,55 @@
-p {
-    color: darkslategrey;
-}
-
-h1 {
-    color: darkslategrey;
-}
-
-h2 {
-    color: darkslategrey;
-}
-
-li {
-    color: darkslategrey;
-}
-
 body {
-    background-color: beige;
+    background-color: rgb(60, 188, 188);
+}
+
+#page-title {
+    font-style: italic;
+}
+
+.favorite-section {
+    background-color: white;
+    border: 3px black solid;
+    margin: 10px;
+    padding: 20px;
+}
+
+.section-header {
+    color: white;
+    background-color: black;
+    padding: 5px;
+}
+
+#favorite-movie-title {
+    font-style: italic;
+    background-color:  lightcyan;
+}
+
+#favorite-music-name {
+    font-weight: bold;
+    background-color: lightcyan;
+}
+
+#most-favorite {
+    font-weight: bold;
+    background-color: lightcyan;
+}
+
+.favorite-image {
+    max-width: 100%;
+    width: 40%;
+    border-radius: 8px;
+}
+
+table, tr, th, td {
+    border: 1px darkslategray solid;
+    border-collapse: collapse;
+}
+
+th {
+    width: 140px;
+    background-color:  rgb(60, 188, 188);
+}
+
+td {
+    text-align: center;
 }

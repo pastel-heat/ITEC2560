@@ -8,31 +8,75 @@
 </head>
 
 <body>
-    <h1>Some of my favorite things</h1>
+    <h1 id="page-title">Some of my favorite things</h1>
+    <h1>By Ethan Hamilton</h1>
 
-    <h2>Favorite Movie</h2>
+    <div class="favorite-section">
+        <h2 class="section-header">Favorite Movie</h2>
+        <p>
+            My favorite movie is <span id="favorite-movie-title"><a href="https://www.imdb.com/title/tt2872718/">Nightcrawler</a></span>. 
+            This movie is a thriller about a petty criminal who starts to make a name for himself as a 
+            cameraman recording footage of accidents or crime scenes, and works his way up in the local news media hierarchy. 
+        </p>
+    </div>
 
-    <p>
-        My favorite movie is <a href="https://www.imdb.com/title/tt2872718/"><i>Nightcrawler</i></a>. 
-        This movie is about a petty criminal who starts to make a name for himself as a 
-        cameraman recording footage of accidents or crime scenes, and works his way up in the local news media hierarchy. 
-    </p>
+    <div class="favorite-section">
+        <h2 class="section-header">Favorite Music</h2>
+        <p>
+            My favorite musician is a French composer by the name of <span id="favorite-music-name">Maurice Ravel</span>. He is considered to have been a part 
+            of the early 20th century impressionist movement, although he disliked the use of that term for his music.
+            Here is his <a href="https://en.wikipedia.org/wiki/Maurice_Ravel">Wikipedia page.</a>
+        </p>
+    </div>
 
-    <h2>Favorite Music</h2>
+    <div class="favorite-section">
+        <h2 class="section-header">Favorite Foods</h2>
+        <ul>
+            <li>Pizza</li>
+            <li>Steak</li>
+            <li id="most-favorite">Scrambled Eggs</li>
+            <li>Burritos</li>
+        </ul>
+    </div>
 
-    <p>
-        My favorite musician is a French composer by the name of <b>Maurice Ravel</b>. He is considered to have been a part 
-        of the early 20th century impressionist movement, although he disliked the use of that term for his music.
-        Here is his <a href="https://en.wikipedia.org/wiki/Maurice_Ravel">Wikipedia page.</a>
-    </p>
+    <div class="favorite-section">
+        <h2 class="section-header">Favorite Images</h2>
+        <img 
+            class="favorite-image" 
+            src="cat1.jpeg" 
+            alt="A photo of a large gray and white cat. He is laying outstretched across a pillow"
+        >
+        <img 
+            class="favorite-image" 
+            src="cat2.jpeg" 
+            alt="A photo of a silver and grey cat. She is curled up on a pillow"
+        >
+    </div>
 
-    <h2>Favorite Foods</h2>
-
-    <ul>
-        <li>Pizza</li>
-        <li>Steak</li>
-        <li>Scrambled Eggs</li>
-    </ul>
-    
+    <div class="favorite-section">
+        <h2 class="section-header">Favorite Books</h2>
+        <table>
+            <tr>
+                <th>Book</th>
+                <th>Author</th> 
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>Dune</td> 
+                <td>Frank Herbert</td> 
+                <td><a href="https://en.wikipedia.org/wiki/Dune_(novel)">Wikipedia</a></td>
+            </tr>
+            <tr>
+                <td>Rough Ideas</td> 
+                <td>Stephen Hough</td> 
+                <td><a href="https://www.amazon.com/Rough-Ideas-Reflections-Music-More/dp/057135047X">Amazon</a></td>
+            </tr>
+            <tr>
+                <td>Gödel, Escher, Bach</td>
+                <td>Douglas Hofstadter</td>
+                <td><a href="https://en.wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach">Wikipedia</a></td>
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
