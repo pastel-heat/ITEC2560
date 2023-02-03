@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conference Registration</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="conference_form.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik" rel="stylesheet">
+</head>
+<body>
+
+    <h1 class="jumbotron">Conference Registration Form</h1>
+    <form>
+        <label for="name">Name</label> <input id="name" name="name" type="text" required> 
+        
+        <br><label for="password">Password</label> <input id="password" name="password" type="password" required>
+        
+        <br><label for="email">E-Mail Address</label> <input id="email" name="email" type="email" required>
+        
+        <br><label for="shirt-size">Shirt Size</label>
+        <select name="shirt-size" id="shirt-size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select>
+        
+        <br><label for="birth-date">Date of Birth</label> <input id="birth-date" name="birth-date" type="date" required>
+        
+        <br>Receive E-mail updates?
+        <div class="form-check">
+            <input name="email-updates" id="email-updates-yes" type="radio" class="form-check-input" checked required>
+            <label for="email-updates-yes" class="form-check-label">Yes</label>
+        </div>
+        <div class="form-check">
+            <input name="email-updates" id="email-updates-no" type="radio" class="form-check-input" required>
+            <label for="email-updates-no" class="form-check-label">No</label>
+        </div>
+
+        <br>Conference Timeslot (Choose one or both)
+        <div class="form-check">
+            <input name="conference-time-morning" id="conference-time-morning" type="checkbox" class="form-check-input">
+            <label for="conference-time-morning" class="form-check-label">Morning</label>
+        </div>
+        <div class="form-check">
+            <input name="conference-time-afternoon" id="conference-time-afternoon" type="checkbox" class="form-check-input">
+            <label for="conference-time-afternoon" class="form-check-label">Afternoon</label>
+        </div>
+
+        <br><label for="special-requests">Special Requests</label>
+        <textarea name="special-requests" id="special-requests" class="form-control" rows="7" cols="70"></textarea>
+
+        <br><input name="submit-form" id="submit-form" type="submit" class="btn btn-primary">
+
+    </form>
+</body>
+</html>

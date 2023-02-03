@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Program</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="favorite_program.css" type="text/css">
+</head>
+<body>
+
+    <h1 class="jumbotron">Consecutive Coin Flip Streak Checker</h1>
+
+    <p>
+        This is a program I wrote that analyzes a sample of 100 coin flips, and checks to see if there is at least
+        one streak of 6 consecutive identical results (for example, 6 heads or 6 tails in a row). I would run this 
+        experiment thousands of times in a row, and use the cumulative results to estimate the probability of 
+        a streak of 6 appearing in 100 coin flips.
+    </p>
+
+    <p>
+        The following code sample is the function I used to look for streaks of 6 within the sample of 100 flips. 
+        I would iterate through a list of randomly generated heads or tails flips, and compare the current index 
+        with the following one. If they matched, I would increment the streak counter, and if they differed it would reset.
+        If the streak counter ever hit 6, it would return true, but if the program checked the whole list without a 6 streak 
+        it would return false.
+    </p>
+
+    <pre>
+        <code>
+            # checks for a streak of 6 in the list of 100 flips, and returns True if it finds one.
+            def streak_checker(coin_flips):
+            # initialize streak at 1 - since if you flip a coin, no matter the result, you have a streak of 1.
+                streak = 1
+
+                # stop iteration on index 98 of list to avoid error of overstepping list bounds
+                for flip in range(len(coin_flips) - 2):
+
+                    # compare current flip with next flip, if they are the same, increase streak counter by 1
+                    if coin_flips[flip] == coin_flips[flip + 1]:
+                        streak += 1
+
+                    # if not the same, reset streak counter back to 1
+                    else:
+                        streak = 1
+        </code>
+    </pre>
+
+    <p>
+        The full program can be found at my <a href="https://github.com/pastel-heat/coin-flips/blob/main/coinflipstreaks.py">GitHub</a>.
+    </p>
+</body>
+</html>
