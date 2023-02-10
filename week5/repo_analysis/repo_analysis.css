@@ -1,0 +1,15 @@
+.repo-list-item {
+    border: 2px solid black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+}
+
+.jumbotron {
+    background-color: lightblue;
+}
+
+body {
+    margin: auto;
+    padding: 15px;
+}
