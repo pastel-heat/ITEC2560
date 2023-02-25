@@ -79,6 +79,7 @@ const longestBridge = Math.max.apply(Math, bridges.map(function(bridge) {return 
 
 bridges.forEach(function(bridge){
     // conditionally assign icon based on if bridge.span matches longestBridge value
+    // using ternary operator, more concise alternative to if else statement
     const currentIcon = (bridge.span === longestBridge) ? longestBridgeIcon : bridgeIcon;
 
     L.marker(bridge.location, {icon: currentIcon})
