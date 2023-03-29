@@ -1,0 +1,7 @@
+This error is caused by referencing a property or method that is not defined within the scope it is being referenced in.
+This is either because it is in a scope that cannot be accessed, or you forgot to define a method.
+
+Chances are this won't be an error that you can safely ignore, as this will likely result in something you intended
+to happen either not working correctly or outright just doing nothing.
+
+This can be fixed by defining whatever you're trying to reference within the correct scope.
